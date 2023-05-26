@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: px;
+  border: 1px solid gray;
+  background-color: green;
+}
+.Box {
+  display: flex;
+}
+.Menu {
+  display: grid;
+  width: 50vw;
+  grid-template-columns: auto auto auto;
+  background-color: yellow;
+}
+.food {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: lightcoral;
+}
+.order {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  background-color: orange;
+}
+
+.friedRice {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  grid-template-columns: auto auto;
+  height: 600px;
+  width: 100%;
+  background-color: yellow;
+}

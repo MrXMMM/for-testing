@@ -1,0 +1,30 @@
+p {
+  font-family: Lato;
+}
+body {
+  margin: 0;
+}
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: black;
+}
+nav h1 {
+  text-decoration: none;
+  color: red;
+}
+nav a:hover {
+  color: wheat;
+  text-decoration: underline;
+}

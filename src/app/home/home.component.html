@@ -1,0 +1,182 @@
+<nav>
+	<label for="food">รายการอาหาร</label>
+	<label for="food">รายการที่สั่ง</label>
+</nav>
+<div class="Box">
+	<div class="Menu">
+
+
+		<div class="friedRice food">
+			
+				<div>ข้าวผัด</div>
+				<div>
+					<img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/123456.jpg?alt=media&token=517f3819-3cb3-4de3-94c6-34d26631b6a3'
+    width="200px" height="200px"></div>
+    <form [formGroup]="form">
+          <!-- <p value="ข้าวผัด" formControlName= "name"> </p> -->
+
+
+					<label for="ingredients">วัตถุดิบ: </label>
+					<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">ทะเล</option>
+          <option value="รวม">รวม</option>
+          </select>
+					<label for="price">ราคา </label>
+					<select type = "number" formControlName="price">
+          <option value=40>ปกติ 40 บาท</option>
+          <option value=50>พิเศษ 50 บาท</option>
+          </select>
+
+					<label>จำนวน</label>
+					<input type="number" formControlName="number" min = 1 max=10 step = 5><br>
+					<label>หมายเหตุ</label>
+					<textarea formControlName="maihate"></textarea><br>
+					<input type="submit" value="เพิ่ม" (click) ="onDish('ข้าวผัด')" >
+</form>
+				</div>
+
+
+				<div class="steak food">
+					<div>สเต็ก</div>
+					<div><img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/%E0%B8%AA%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%81%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%82%E0%B8%84%E0%B8%A5%E0%B8%B2.jpg?alt=media&token=b894eeed-5f1b-486f-932e-f6c3e9d6da37' width="200px" height="170px">
+        </div>
+						<label for="ingredients">วัตถุดิบ: </label>
+						<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">เนื้อวัว</option>
+          <option value="รวม">ปลา</option>
+          </select>
+						<label for="price">ราคา </label>
+						<select id="price" formControlName="price" value="">
+          <option value="ปกติ">ปกติ 40 บาท</option>
+          <option value="พิเศษ">พิเศษ 50 บาท</option>
+          </select>
+						<form [formGroup]="form">
+							<label>จำนวน</label>
+							<input type="number" formControlName="number"><br>
+							<label>หมายเหตุ</label>
+							<textarea formControlName="maihate"></textarea><br>
+									<input type="submit" value="เพิ่ม" (click) ="onDish('สเต็ก')" >
+    </form>
+					</div>
+
+
+					<div class="collard food">
+						<div>ผัดคะน้า</div>
+						<div>
+							<img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/11.jpg?alt=media&token=2533d59f-0944-4d01-bb33-ca725fab42a9' width="200px" height="170px"></div>
+							<label for="ingredients">วัตถุดิบ: </label>
+							<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">ทะเล</option>
+          <option value="รวม">หมูกรอบ</option>
+          </select>
+							<label for="price">ราคา </label>
+							<select id="price" formControlName="price" value="">
+          <option value="ปกติ">ปกติ 40 บาท</option>
+          <option value="พิเศษ">พิเศษ 50 บาท</option>
+          </select>
+							<form [formGroup]="form">
+								<label>จำนวน</label>
+								<input type="number" formControlName="number"><br>
+								<label>หมายเหตุ</label>
+								<textarea formControlName="maihate"></textarea><br>
+								<input type="submit" value="เพิ่ม" onclick="alert('เพิ่มแล้ว')" >
+    </form>
+						</div>
+
+
+						<div class="curry food">
+							<div>ข้าวผัดผงกระหรี่</div>
+							<div><img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/photo.jpg?alt=media&token=8a21bc87-a344-4822-b24a-36d88585d05b' width="200px" height="170px">
+        </div>
+								<label for="ingredients">วัตถุดิบ: </label>
+								<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">ทะเล</option>
+          </select>
+								<label for="price">ราคา </label>
+								<select id="price" formControlName="price" value="">
+          <option value="ปกติ">ปกติ 40 บาท</option>
+          <option value="พิเศษ">พิเศษ 50 บาท</option>
+          </select>
+								<form [formGroup]="form">
+									<label>จำนวน</label>
+									<input type="number" formControlName="number"><br>
+									<label>หมายเหตุ</label>
+									<textarea formControlName="maihate"></textarea><br>
+									<input type="submit" value="เพิ่ม" onclick="alert('เพิ่มแล้ว')" >
+    </form>
+							</div>
+
+
+							<div class="friedBasil food">
+								<div>ข้าวผัดกะเพรา</div>
+								<div>
+									<img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/Fried-basil-with-pork-Chops.jpg?alt=media&token=6362dfab-09bf-474e-84d8-6ff42304ae93' width="200px" height="170px"></div>
+									<label for="ingredients">วัตถุดิบ: </label>
+									<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">ทะเล</option>
+          <option value="รวม">รวม</option>
+          </select>
+									<label for="price">ราคา </label>
+									<select id="price" formControlName="price" value="">
+          <option value="ปกติ">ไม่ไข่ดาว 40 บาท</option>
+          <option value="พิเศษ">ใส่ไข่ดาว 45 บาท</option>
+          </select>
+									<form [formGroup]="form">
+										<label>จำนวน</label>
+										<input type="number" formControlName="number"><br>
+										<label>หมายเหตุ</label>
+										<textarea formControlName="maihate"></textarea><br>
+										<input type="submit" value="เพิ่ม" onclick="alert('เพิ่มแล้ว')" >
+    </form>
+								</div>
+
+
+								<div class="suki food">
+									<div>สุกี้</div>
+									<div>
+										<img src='https://firebasestorage.googleapis.com/v0/b/aonrestaurant.appspot.com/o/sukiyaki.jpg?alt=media&token=fd3f62b0-272a-4d79-9e7c-8c4644ca001d' width="200px" height="170px"></div>
+										<label for="ingredients">วัตถุดิบ: </label>
+										<select id="ingredients" formControlName="ingredients" value="">
+          <option value="หมู">หมู</option>
+          <option value="ไก่">ไก่</option>
+          <option value="ทะเล">ทะเล</option>
+          <option value="รวม">รวม</option>
+          </select>
+										<label for="price">ราคา </label>
+										<select id="price" formControlName="price" value="">
+          <option value="ปกติ">ปกติ 40 บาท</option>
+          <option value="พิเศษ">พิเศษ 50 บาท</option>
+          </select>
+										<form [formGroup]="form">
+											<label>จำนวน</label>
+											<input type="number" formControlName="number"><br>
+											<label>หมายเหตุ</label>
+											<textarea formControlName="maihate"></textarea><br>
+											<input type="submit" value="เพิ่ม" onclick="alert('เพิ่มแล้ว')" >
+    </form>
+									</div>
+
+
+								</div>
+								<div class="order">
+									<div class="list"></div>
+									<div class="price">
+										<div>ราคารวม</div>
+										<div>
+											<button type="button" onclick="alert('ยังไม่เสร็จไอสัส')">สั่งอาหาร</button>
+										</div>
+									</div>
+
+
+								</div>
+							</div>

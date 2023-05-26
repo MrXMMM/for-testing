@@ -1,0 +1,50 @@
+.colbig{
+  padding: 25px;
+  display: grid;
+
+  
+  
+  grid-template-columns: auto auto auto auto auto;
+  width: 94.4vw;
+  text-align: center;
+ 
+
+}
+
+.header{
+  display: flex;  
+  justify-content: center;
+
+  border: 3px solid black;
+
+}
+.col{
+  border: 3px solid black;
+  justify-content: space-around;
+}
+
+
+
+
+
+table, th {
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+}
+ td {
+   border: 1px solid grey;
+ }
+
+
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}

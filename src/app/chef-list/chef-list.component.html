@@ -1,0 +1,34 @@
+<div class = "header">
+  <div >
+    <h1>Order</h1>
+  </div>
+</div>
+
+
+<div  >
+  <div  >
+   <table>
+    <tr>
+      <td>ชื่อ</td>
+      <td>จำนวนจาน</td>
+      <td>topping</td>
+      <td>หมายเหตุ</td>
+      <td>สถานะ</td>
+
+  <!-- <td>หมายเหตุ</td>
+  <td>สถานะ</td>       -->
+    </tr>
+
+    <tr *ngFor = "let Foods of Foods">
+      <td>{{ Foods.name }}</td>
+      <td>{{ Foods.number }}</td> 
+      <td>{{ Foods.topping }}</td> 
+      <td>{{ Foods.maihate }}</td>      
+      <!-- <td>{{ Foods.price }}</td> -->
+      <td><button  (click) = "finish(Foods.id)">เสร็จเเล้ว</button></td>
+    </tr>
+    <!-- <div>{{ Foods.name }}   {{ Foods.topping }} {{ Foods.table }}{{ Foods.price }}  <button>x</button> </div> -->
+
+   </table>
+</div>
+

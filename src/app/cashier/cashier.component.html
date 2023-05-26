@@ -1,0 +1,40 @@
+<div class = "header">
+  <div >
+    <h1>CASHIER</h1>
+  </div>
+</div>
+
+
+
+<div  >
+  <div  >
+   <table>     
+    <tr>
+      <td>ชื่อ</td>
+      <td>จำนวนจาน</td>
+      <td>topping</td>
+      <!-- <td>หมายเหตุ</td> -->
+      <td>โต๊ะ</td>
+      <td>ราคา</td>
+      <td>รวม</td>
+      <td>สถานะ</td>
+
+
+
+    </tr>
+
+    <tr *ngFor = "let Foods of Foods">
+      <td>{{ Foods.name }}</td>
+      <td>{{ Foods.number }}</td> 
+      <td>{{ Foods.topping }}</td> 
+      <!-- <td>{{ Foods.maihate }}</td>       -->
+      <td>{{ Foods.table }}</td>
+      <td>{{ Foods.price }}</td>  
+      <td>{{ SumPrice(Foods.number, Foods.price) }}</td> 
+      <td><button (click) = "del(Foods.id)">จ่ายเงินเเล้ว</button></td>    
+    </tr>
+
+
+   </table>
+  </div>
+</div>
